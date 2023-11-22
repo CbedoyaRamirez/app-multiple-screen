@@ -1,0 +1,16 @@
+.lista {
+    width: 100%;
+    background: #9FF088;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    list-style: none;
+}
+
+.item {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #813333;
+    cursor: pointer;
+}
