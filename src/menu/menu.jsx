@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2'
 
 import './menu.css';
+import LogoMenu from '../assets/LogoMenu.jpg';
 
 function Menu() {
     function openModalSettings() {
@@ -15,7 +16,7 @@ function Menu() {
             showLoaderOnConfirm: true,
             preConfirm: async (login) => {
                 try {
-                    setGlobalState(login);
+                    console.log(login);
                 } catch (error) {
                     console.log(error);
                 }
@@ -30,7 +31,10 @@ function Menu() {
 
     return (
         <ul className="lista">
-            <li className="item" onClick={openModalSettings}>Donaciones</li>
+            <img className="item LogoMenu" src={LogoMenu} />
+            <li className="item" onClick={openModalSettings}>Buenas tardes</li>
+            <li className="item" onClick={openModalSettings}>Canales</li>
+            <li className="item" onClick={openModalSettings}>Sobre la pagina</li>
         </ul >
     )
 }

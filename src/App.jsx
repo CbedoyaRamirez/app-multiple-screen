@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Screen from './screen/screen';
+import Menu from './menu/menu';
 import Swal from 'sweetalert2'
 
 
@@ -14,7 +15,10 @@ function App() {
   })
 
   return (
-    <Screen />
+    <main className="contenedor">
+      <Menu />
+      <Screen />
+    </main>
   )
 }
 
